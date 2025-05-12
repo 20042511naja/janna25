@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+    letter-spacing: 10px;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+  }
+  
+  body {
+    background-image: url('robert.jpg');
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-attachment: fixed;
+    background-size: 160% 100%;
+    color: white;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: unset;
+    padding: 0;
+    background-color: #1a1a1a00;
+  }
+  
+  .nav-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 20px;
+    gap: 20px;
+  }
+  
+  .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .avatar:hover {
+    transform: scale(1.2); 
+    filter: brightness(1.2); 
+  }
+  
+  
+  nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 4px;
+  }
+  
+  .search-container {
+    background: white;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .search-container input {
+    border: none;
+    padding: 8px 12px;
+    outline: none;
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+  
+  .search-btn {
+    border: none;
+    background: transparent;
+    padding: 0 10px;
+    cursor: pointer;
+  }
+  
+  .icons .icon {
+    margin-left: 15px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  .icons a {
+    text-decoration: none;
+    color: white;
+    transition: transform 10s ease;
+    display: inline-block;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+  
+  .icons a:hover {
+    animation: pulse 0.6s ease;
+  }
+  
+  
+  .main {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 40px;
+  }
+  
+  .left ul {
+    list-style: none;
+  }
+  
+  .left li {
+    margin-bottom: 10px;
+    font-size: 30px;
+    letter-spacing: 4px;
+    color: #ccc;
+    transition: color 0.3s ease;
+  }
+  
+  .left .selected {
+    color: white;
+  }
+  
+  .left .selected .play {
+    color: pink;
+    margin-right: 10px;
+  }
+  
+  .play {
+    font-size: 50px;
+    color: rgb(53, 24, 29);
+    border-radius: 8px;
+    padding: 5px 10px;
+    display: inline-block;
+    cursor: pointer; 
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .play:hover {
+    transform: scale(1.2); 
+    color: #ff4b5c;
+  }
+  .left .selected p {
+    font-size: 12px;
+    color: #aaa;
+    margin-left: 115px;
+    letter-spacing: 2px;
+  }
+  
+  .left li:nth-child(2),
+  .left li:nth-child(3),
+  .left li:nth-child(4),
+  .left li:nth-child(5) {
+    letter-spacing: 8px;
+  }
+  
+  .title-panic,
+  .title-love,
+  .title-house {
+    letter-spacing: 15px;
+  }
+  
+  .title-killer {
+    letter-spacing: 17px; 
+  }
+  
+  .right {
+    align-self: center;
+    text-align: center;
+  }
+  
+  .fincher {
+    width: 300px;
+    border-radius: 10px;
+    filter: grayscale(100%);
+  }
+  
+  .right h2 {
+    margin-top: 400px;
+    font-size: 26px;
+    color: rgb(226, 104, 125);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    letter-spacing: 6px;
+    display: inline-block;
+    width: auto;
+  }
+  
+  #foryou:hover,
+  #browse:hover,
+  #history:hover {
+    background-color: #333;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
